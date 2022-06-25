@@ -1,0 +1,60 @@
+body{
+    background-color: black;
+    
+}
+
+
+.container{
+    background-color:whitesmoke;
+    display:block;
+    margin: 25%;
+    width: auto;
+    padding:5%;
+    text-align: center;
+    font-size: larger;
+    
+}
+
+
+.screen{
+    background-color:grey;
+    color:aliceblue;
+    padding: 5%;
+    border-radius:5%;
+    border: 10px solid green;
+}
+
+.keyboard{
+    display:grid;
+    grid-template-columns: auto;
+    margin: 2%;
+    border:5px solid black;
+}
+
+.topkeys{
+    display:grid;
+    grid-template-columns:50% 25% 25%;
+}
+
+.otherkeys{
+    display:grid;
+    grid-template-columns:25% 25% 25% 25%;
+}
+
+.bottomkeys{
+    display:grid;
+    grid-template-columns:25% 25% 100%;
+
+    
+}
+
+button{
+    width:100%;
+    margin:auto;
+    
+}
+
+button:hover{
+    color:white;
+    background-color:black
+}

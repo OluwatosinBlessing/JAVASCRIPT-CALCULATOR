@@ -15,13 +15,13 @@ body{
     
 }
 
-
-.screen{
+#display{
     background-color:grey;
     color:aliceblue;
     padding: 5%;
     border-radius:5%;
     border: 10px solid green;
+    color:aliceblue;
 }
 
 .keyboard{
@@ -42,15 +42,22 @@ body{
 }
 
 .bottomkeys{
+    margin: auto;
+    width: 100%;
     display:grid;
-    grid-template-columns:25% 25% 100%;
+    grid-template-columns:1fr 1fr 2fr;
 
     
 }
 
+#equals{
+    width:100%;
+    margin: auto;
+}
+
 button{
     width:100%;
-    margin:auto;
+    margin:1px;
     
 }
 

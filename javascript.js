@@ -1,17 +1,39 @@
-const calculator = document.getElementsByClassName('container');
-const keyboard = document.getElementsByClassName('keyboard');
+let display = document.getElementById('display');
+
+let buttons = Array.from(document.getElementsByClassName('button'));
 
 
-buttons = Array.from(document.getElementsByClassName('key'));
-
-console.log(buttons)
-
-buttons.map(buttons =>
-    button.addEventListener('click',(e)=>{
-        console.log('clicked');
+buttons.map( button => {
+    button.addEventListener('click', (e) => {
+        console.log('Clicked');
+        console.log(e);
         console.log(e.target);
-        console.log(e.target.innerHTML);
-    })
+        switch(e.target.innerText){
+            case 'AC':
+                display.innerText = '';
+                break;
+            case 'DEL':
+                if(display.innerText){
+                    display.innerText = display.innerText.slice(0, -1);
+
+                }
+                
+                break;
+
+            case '=':
+                try{
+                    display.innerText = eval(display.innerText);
+
+                } catch{
+                    display.innerText = 'Error!';
+                }
+
+                break;
+            default:
+                display.innerText += e.target.innerText;
+        }
+    });
     
     
-    )
+});
+

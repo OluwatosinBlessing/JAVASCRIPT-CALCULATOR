@@ -7,13 +7,12 @@
     <title>Calculator Assignment</title>
 
     <link rel="stylesheet" href="style.css">
-    <script src="javascript.js"></script>
+    
 </head>
 <body>
-    <div class="container">
+    <div class ="container">
 
-        <div class="screen">
-screen
+        <div id ='display'>
 
         </div>
 
@@ -22,27 +21,27 @@ screen
 
         <div class="topkeys">
 
-            <button id="ac" data-action="clear">AC</button>
-            <button id="del" data-action="delete">DEL</button>
-            <button id="multiply" data-action="multiply">*</button>
+            <button class="button" value="allclear" onclick="clear()">AC</button>
+            <button class="button" value="delete">DEL</button>
+            <button class="button" value="*">*</button>
         </div>
         <div class="otherkeys">
-            <button id="1" class="key">1</button>
-            <button id="2" class="key">2</button>
-            <button id="3" class="key">3</button>
-            <button id="divide">/</butto>
-            <button id="4" class="key">4</button>
-            <button id="5" class="key">5</button>
-            <button id="6" class="key">6</button>
-            <button id="plus" class="key">+</button>
-            <button id="7" class="key">7</button>
-            <button id="8" class="key">8</button>
-           <button id="9" class="key">9</button>
-           <button id="minus" data-action="minus">-</button>
+            <button class="button" value="1">1</button>
+            <button class="button" value="2">2</button>
+            <button class="button" value="3">3</button>
+            <button class="button" value="/">/</button>
+            <button class="button" value="4">4</button>
+            <button class="button" value="5">5</button>
+            <button class="button" value="6">6</button>
+            <button class="button" value="+">+</button>
+            <button class="button" value="7">7</button>
+            <button class="button" value="8">8</button>
+           <button  class="button" value="9">9</button>
+           <button  class="button" value="-">-</button>
         <div class="bottomkeys">
-            <button id="dot" data-action="dot">.</button>
-            <button id="0" class="key">0</button>
-            <button id="equals" data-action="calculate">=</button>
+            <button class=button value=".">.</button>
+            <button class="button" value="0">0</button>
+            <button class="button" id="equals" value="=">=</button>
 
 
         </div>
@@ -54,6 +53,6 @@ screen
 
 
     </div>
-    
+<script src="javascript.js"></script>  
 </body>
 </html>
